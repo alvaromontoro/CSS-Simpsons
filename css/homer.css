@@ -1,0 +1,843 @@
+html {
+  --yellow: #FDD835; 
+  --blue: #70D1FE;
+  
+}
+
+#homer {
+  width: 432px;
+  height: 720px;
+  position: relative;
+  margin: auto auto;
+}
+
+#homer::after {
+  content: "";
+  width: 432px;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:-1;
+  /*background: url(https://vignette.wikia.nocookie.net/simpsons/images/b/bd/Homer_Simpson.png/revision/latest/scale-to-width-down/288) #fff;
+  /*background: url(https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png) #fff;*/
+  background-size: cover;
+  opacity: 0.5;
+}
+
+#homer > div {
+  opacity: 1;
+}
+
+#homer > div > div,
+#homer > div > div > div {
+  position: absolute;
+  box-sizing:border-box;
+}
+
+#shadow {
+  left: 0;
+  top: 655px;
+  width: 300px;
+  height: 60px;
+  border-radius: 100%;
+  background: #555;
+  filter: blur(5px)
+}
+
+.eye {
+  border-radius: 100%;
+  border: 3px solid #000;
+  width: 55px;
+  height: 55px;
+  top: 86px;
+  left: 149px;
+  background: black;
+  box-shadow: inset -4px 1px 0 21px white;
+}
+
+.eye.left {
+  top: 81px;
+  left: 195px;
+  width: 50px;
+  height: 50px;
+  box-shadow: inset 9px -3px 0 18.75px white;
+}
+
+.hair-top {
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  width: 50px;
+  height: 50px;
+  top: 11px;
+  left: 129px;
+  transform: rotate(15deg);
+}
+
+.hair-top.left {
+  top: 20px;
+  left: 114px;
+  transform: rotate(-5deg);
+}
+
+#forehead {
+  border: 3px solid black;
+  border-bottom: 0px solid var(--yellow);
+  width: 121px;
+  height: 90px;
+  border-radius: 100px 100px 20px 0;
+  transform: rotate(-28deg);
+  top: 24px;
+  left: 102px;
+  background: var(--yellow);
+}
+
+#eyebrow {
+  border: 3px solid var(--yellow);
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  top: 72px;
+  left: 220px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  transform: rotate(40deg);
+  background: var(--yellow);
+}
+
+#hair {
+  width: 20px;
+  height: 20px;
+  border: 3px solid transparent;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  top: 115px;
+  left: 120px;
+  transform: rotate(40deg) skewX(40deg);
+}
+
+#hair::before,
+#hair::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15px;
+  border-left: 4px solid black;
+  transform: rotate(-20deg);
+  top: 15px;
+}
+
+#hair::after {
+  height: 20px;
+  left: 24px;
+  top: -8px;
+  transform: rotate(-75deg);
+}
+
+.ear {
+  width: 23px;
+  height: 29px;
+  border: 3px solid black;
+  border-right: 3px solid transparent;
+  border-radius: 100%;
+  top: 150px;
+  left: 130px;
+  transform: rotate(-6deg);
+  background: var(--yellow);
+}
+
+.ear::before,
+.ear::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border:3px solid transparent;
+  border-top: 3px solid black;
+  width: 11px;
+  height: 17px;
+  border-radius: 100%;
+  top: 6px;
+  left: 0px;
+}
+
+.ear::after {
+  transform:rotate(-90deg);
+  top: 0;
+  left: 10px;
+}
+
+.ear.left {
+  left: 221px;
+  top: 115px;
+  transform: rotate(-186deg);
+}
+
+.ear.left::before {
+  border: 0;
+}
+
+#nose {
+  width: 27px;
+  height: 45px;
+  border: 9px solid transparent;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-radius: 100px;
+  top: 108px;
+  left: 200px;
+  transform: rotate(80deg);
+  background: var(--yellow);
+}
+
+#nose::after {
+  content: "";
+  width: 3px;
+  height: 6px;
+  background: black;
+  position: absolute;
+  display: block;
+  bottom: -6px;
+  right: -2px;
+}
+
+#beard {
+  width: 88px;
+  height: 82px;
+  border-radius: 100%;
+  border: 3px solid black;
+  top: 143px;
+  left: 155px;
+  background: #d3ae5d;
+}
+
+#beard::after {
+  content: "";
+  display: block;
+  width: 43px;
+  height: 49px;
+  background: #d3ae5d;
+  position: absolute;
+  right: -3px;
+  top: -2px;
+}
+
+#beard::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #d3ae5d;
+  position: absolute;
+  border: 3px solid transparent;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-radius: 100%;
+  right: -7px;
+  top: 34px;
+  transform: rotate(-45deg)
+}
+
+#smile {
+  width: 115px;
+  height: 40px;
+  border:3px solid transparent;
+  border-bottom: 3px solid black;
+  border-radius: 100%;
+  top: 157px;
+  left: 159px;
+  transform-origin: bottom left;
+  transform: rotate(-5deg);
+  box-shadow: inset 50px -10px #d3ae5d;
+}
+
+#smile::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border: 3px solid transparent;
+  border-left: 3px solid black;
+  border-radius: 100%;
+  bottom: -5px;
+  left: 4px;
+  transform: rotate(30deg);
+  box-shadow: 72px -44px 0 -8px black; /* hack! :( */
+}
+
+
+#smile::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border: 3px solid transparent;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-radius: 100%;
+  bottom: 5px;
+  right: 2px;
+  transform: rotate(50deg);
+  background: #d3ae5d;
+}
+
+#upper-lip {
+  width: 45px;
+  height: 65px;
+  border: 3px solid transparent;
+  border-right: 3px solid black;
+  border-radius: 100%;
+  top: 102px;
+  left: 227px;
+  transform-origin: bottom right;
+  transform: rotate(-44deg); /* d3ae5d */
+  box-shadow: inset -6px -0px #d3ae5d, inset 6px 55px 0 4px #d3ae5d;
+}
+
+.cheek {
+  height: 72px;
+  width: 100px;
+  border-left: 3px solid black;
+  background: var(--yellow);
+  box-shadow: 0 -4px var(--yellow);
+  top: 134px;
+  left: 129px;
+  transform-origin: top left;
+  transform: rotate(-17deg);
+}
+
+#neck {
+  width: 80px;
+  height: 55px;
+  background: var(--yellow);
+  top: 200px;
+  left: 150px;
+  border-left: 3px solid black;
+}
+
+#neck::before,
+#neck::after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform-origin: top right;
+  border-right: 3px solid black;
+  width: 20px;
+  height: 60px;
+  right: 1px;
+  transform: rotate(-15deg);
+  background: var(--yellow);
+}
+
+#neck::after {
+  height: 20px;
+  top: 25px;
+  right: -5px;
+  transform: rotate(-40deg);
+  background: var(--yellow);
+}
+
+.shirt-neck {
+  border: 3px solid black;
+  width: 65px;
+  height: 31px;
+  top: 224px;
+  left: 136px;
+  transform: skewX(-10deg) rotate(9deg);
+  background: #fff;
+  box-shadow: 3px 10px 0 #fff;
+}
+
+.shirt-neck.left {
+  top: 212px;
+  left: 186px;
+  transform: skewX(33deg) rotate(9deg);
+}
+
+#v-neck {
+  width: 43px;
+  height: 41px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+  transform:  rotate(42deg) skew(23deg);
+  top: 204px;
+  left: 203px;
+  box-shadow: 10px 10px 0 9px white;
+}
+
+#v-neck::before,
+#v-neck::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 3px solid black;
+  width: 19px;
+  transform-origin: top right;
+  transform: rotate(-25deg);
+  top: -2px;
+  right: -2px;
+}
+
+#v-neck::after {
+  width: 27px;
+  transform: rotate(205deg);
+  top: 1px;
+  right: -2px;
+}
+
+#shirt-line {
+  height: 52px;
+  width: 10px;
+  border: 3px solid transparent;
+  border-right: 3px solid black;
+  border-radius: 100%;
+  top: 226px;
+  left: 246px;
+  transform: rotate(-36deg);
+}
+
+#shirt-line-2 {
+  height: 68px;
+  width: 10px;
+  border: 0;
+  border-radius: 100%;
+  top: 227px;
+  left: 256px;
+  transform: rotate(-35deg);
+  background: white;
+  box-shadow: inset -3px 0 black, -8px 12px 0 4px white;
+}
+
+#shirt-line::before,
+#shirt-line-2::before{
+  content:"";
+  display: block;
+  position: absolute;
+  width: 9px;
+  height: 0px;
+  border-top: 3px solid black;
+  transform: rotate(36deg);
+  top: 21px;
+  left: 3.5px;
+  left: 4px;
+}
+
+#shirt-line-2::before{
+  top: 20px;
+  left: 7px;
+  width: 5px;
+}
+
+#waist {
+  width: 240px;
+  height: 190px;
+  border-radius: 100%;
+  border: 3px solid black;
+  top: 302px;
+  left: 98px;
+  background: var(--blue);
+}
+
+.leg {
+  width: 112px;
+  top: 440px;
+  left: 128px;
+  height: 205px;
+  background: var(--blue);
+}
+
+.leg.right::before,
+.leg.right::after,
+.leg.left::after {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -13px;
+  border-radius: 100%;
+  width: 15px;
+  height: 190px;
+  transform-origin: top left;
+  transform: rotate(1deg);
+  box-shadow: 3px 0 black, 10px 0px 0 4px var(--blue)
+}
+
+.leg.right::after {
+  left: 103px;
+  height: 160px;
+  width: 12px;
+  top: 47px;
+  transform: rotate(3deg);
+  box-shadow: 3px 0 #000;;
+}
+
+.leg.left {
+  width: 187px;
+  top: 438px;
+  left: 130px;
+  height: 205px;
+  background: var(--blue);
+}
+
+.leg.left::after {
+  left: 182px;
+  height: 206px;
+  width: 13px;
+  top: -6px;
+  transform: rotate(1.5deg);
+  border: 3px solid transparent;
+  box-shadow: inset -3px 0 black, inset -20px -10px var(--blue);
+}
+
+.opening {
+  width: 111px;
+  height: 22px;
+  background: red;
+  border-radius: 100%;
+  top: 635px;
+  left: 121px;
+  transform: rotate(1deg);
+  background: var(--blue);
+  box-shadow: inset 0 -3px black;
+}
+
+.opening.left {
+  left: 205px;
+  top: 630px;
+}
+
+.opening::before {
+  content:"";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #000;
+  top: calc(50% - 3px);
+  box-shadow: 109px 0 #000;
+}
+
+
+
+
+
+
+#shirt {
+  left: 92px;
+  width: 251px;
+  height: 190px;
+  top: 250px;
+  overflow: hidden;
+}
+
+#shirt > div {
+  width: 450px;
+  height: 350px;
+  border: 3px solid #000;
+  border-radius: 100%;
+  bottom:0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+#shirt > div::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 300px;
+  width: 245px;
+  border: 3px solid #000;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  background: white;
+  transform: translate(-50%, 0%);
+}
+
+.shoe {
+  top: 625px;
+  left: 238px;
+  width: 110px;
+  height: 50px;
+  transform-origin: bottom right;
+  transform:  rotate(-12deg) skew(30deg);
+  background: #555;
+}
+
+.shoe::before {
+  content:"";
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 50px;
+  bottom: -4px;
+  right: -5px;
+  border-radius: 100%;
+  transform: rotate(-12deg);
+  box-shadow: inset -4px 0 #000, inset -10px 0 #555;
+}
+
+.shoe::after {
+  content:"";
+  position: absolute;
+  display: block;
+  width: 102%;
+  height: 29px;
+  border-radius: 100%;
+  background: #555;
+  bottom: -9px;
+  left: -2px;
+  transform: rotate(4deg);
+  box-shadow: inset 1px -4px #000
+}
+
+.shoe.right {
+  top: 638px;
+  height: 52px;
+  left: 161px;
+  transform:  rotate(-8deg) skew(23deg);
+  width: 105px;
+  box-shadow: -3px -8px black;
+}
+
+.tacon {
+  top: 638px;
+  left: 120px;
+  background: #555;
+  width: 30px;
+  height: 50px;
+  transform-origin: bottom left;
+  transform: rotate(3deg) skewY(15deg);
+  box-shadow: inset 0 -3px black;
+}
+
+.tacon::before {
+  content:"";
+  position:absolute;
+  display: block;
+  box-shadow: inset -3px 0 black;
+  height: 14px;
+  width: 4px;
+  bottom: 0;
+  right: 0;
+}
+
+.tacon::after {
+  content:"";
+  position:absolute;
+  display: block;
+  height: 44px;
+  box-shadow: inset 3px 0 black;
+  bottom: 0;
+  left: -2px;
+  width: 4px;
+  border-radius: 100%;
+}
+
+/*
+.finger {
+  width:34px;
+  height: 24px;
+  border: 3px solid black;
+  border-radius: 100%;
+  top: 254px;
+  left: 162px;
+  transform: rotate(-10deg);
+  background: var(--yellow);
+}
+
+#finger-2 {
+  width: 38px;
+  height: 26px;
+  top: 265px;
+  left: 173px;
+  transform: rotate(-30deg);
+}
+
+#finger-3 {
+  width: 35px;
+  height: 24px;
+  top: 277px;
+  left: 187px;
+  transform: rotate(-36deg);
+}*/
+
+.shirt-arm {
+  width: 86px;
+  height: 76px;
+  top: 250px;
+  left: 95px;
+  overflow: hidden;
+}
+
+.shirt-arm > div {
+  border: 3px solid black;
+  width: 250px;
+  height: 300px;
+  bottom: 0;
+  left: 50%;
+  border-radius: 100%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+.shirt-arm > div::before {
+  content:"";
+  display: block;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  left: 50%;
+  width:88px;
+  height: 150px;
+  transform: translate(-50%, 225px);
+  box-shadow: inset 0 0 0 3px #000;
+  background: white;
+}
+
+.shirt-arm.left {
+  top:245px;
+  left: 210px;
+  transform: rotate(-14deg);
+}
+
+.shirt-arm.left > div::before {
+  background: none;
+  box-shadow: inset -3px 0 0 0 #000, inset -10px 0 0 white;
+}
+
+#shirt-bg {
+  width: 140px;
+  height: 40px;
+  border-left: 3px solid black;
+  transform: rotate(9deg);
+  top: 261px;
+  left: 134px;
+  background: white;
+}
+
+#arm {
+  width: 65px;
+  height: 140px;
+  background: var(--yellow);
+  top: 290px;
+  left: 110px;
+  border-right: 3px solid black;
+  transform: rotate(-5deg) skewY(-20deg);;
+}
+
+#arm::before {
+  content:"";
+  display: block;
+  position: absolute;
+  height: 220px;
+  width: 60px;
+  top: -15px;
+  left: -10px;
+  box-shadow: inset 3px -1px black;
+  border-radius: 100%;
+  background: var(--yellow);
+  transform: rotate(-5deg);
+}
+
+#finger-1 {
+  border-top: 4px solid transparent;
+  border-radius: 100px 400%;
+  width: 24px;
+  height: 40px;
+  background: var(--yellow);
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  abox-shadow: inset 3px -2.5px #000;
+  top: 460px;
+  left: 144px;
+  transform: rotate(-30deg);
+}
+
+#finger-1::before {
+  content:"";
+  position: absolute;
+  display: block;
+  background: var(--yellow);
+  width: 6px;
+  height: 6px;
+  left:-4px;
+}
+
+#finger-3 {
+  border-top: 4px solid transparent;
+  border-radius: 100px;
+  width: 24px;
+  height: 50px;
+  background: var(--yellow);
+  border:3px solid black;
+  top: 445px;
+  left: 160px;
+  transform: rotate(-25deg);
+}
+
+#finger-3::after {
+  content:"";
+  position: absolute;
+  display: block;
+  height: 30px;
+  width: 30px;
+  left: -4px;
+  top: -20px;
+  background: var(--yellow);
+}
+
+#finger-2 {
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  border: 3px solid black;
+  border-top: 3px solid var(--yellow);
+  top: 444px;
+  left: 170px;
+  transform: rotate(0deg);
+  background: var(--yellow);
+}
+
+#finger-2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 44px;
+  top: -40px;
+  right: 3px;
+  transform: rotate(-17deg);
+  border-radius: 100%;
+  box-shadow: inset 3px 0 black, -10px 0 0 7px var(--yellow);
+  background: none;
+}
+
+.line-pants,
+.line-pants::before {
+  content:"";
+  position: absolute;
+  display: block;
+  width: 112px;
+  height: 20px;
+  border-radius: 100%;
+  box-shadow: inset 0 -3px black;
+  top: 607px;
+  left: 126px;
+  transform-origin: top left;
+  transform: rotate(2deg)
+}
+
+.line-pants::before {
+  left: 110px;
+  top: 10px;
+  width: 84px;
+  height: 10px;
+  transform: rotate(-6deg)
+}
