@@ -11,6 +11,6 @@ See them online on CodePen:
 
 ---
 
-## Disclaimer
+**Disclaimer**
 
 All images are copyright to their respective owners. 
