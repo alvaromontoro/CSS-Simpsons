@@ -2,20 +2,13 @@ html {
   --red: #F44336;
   --yellow: #FDD835;
   --blue: #1E88E5;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  background: none;
 }
 
 #bart {
   width: 450px;
   height: 671px;
   position: relative;
+  margin: auto auto;
 }
 
 #bart::after {
