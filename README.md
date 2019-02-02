@@ -2,11 +2,12 @@
 
 Drawings of The Simpsons character done using only HTML and CSS.
 
-See them online on CodePen:
+See them online on CodePen (in alphabetical order):
 
 - [Bart Simpson](https://codepen.io/alvaromontoro/full/ZVZwPR)
 - [Homer Simpson](https://codepen.io/alvaromontoro/full/rPazmv)
 - [Lisa Simpson](https://codepen.io/alvaromontoro/full/bzVjeK)
+- [Marge Simpson](https://codepen.io/alvaromontoro/full/ZwKpdR)
 
 
 ---
