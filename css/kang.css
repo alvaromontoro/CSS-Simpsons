@@ -105,6 +105,7 @@
   top: 105px;
   left: 270px;
   background: var(--green);
+  z-index:-1;
 }
 .head::before {
   width: 128px;
@@ -120,11 +121,10 @@
   height: 100px;
   width: 10px;
   border-radius: 100%;
-  border-right: 3px solid #000;
-  transform: rotate(-45deg);
-  top: 141px;
-  left: -65px;
-  box-shadow: 30px 0 0 25px var(--green);
+  transform: rotate(-40deg);
+  top: 136px;
+  left: -64px;
+  box-shadow: inset -4px 0 0 -1px #000, 30px 0 0 25px var(--green);
 }
 .stain {
   background: var(--dark-green);
@@ -285,10 +285,10 @@
 .lip {
   border-right: 3px solid transparent;
   height: 120px;
-  width: 120px;
+  width: 118px;
   background: var(--green);
   top: 245px;
-  left: 177px;
+  left: 180px;
 }
 .lip::before {
   border-radius: 100%;
