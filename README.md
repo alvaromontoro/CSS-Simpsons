@@ -6,6 +6,7 @@ See them online on CodePen (in alphabetical order):
 
 - [Bart Simpson](https://codepen.io/alvaromontoro/full/ZVZwPR)
 - [Homer Simpson](https://codepen.io/alvaromontoro/full/rPazmv)
+- [Kang (alien)](https://codepen.io/alvaromontoro/full/omWOKR)
 - [Lisa Simpson](https://codepen.io/alvaromontoro/full/bzVjeK)
 - [Marge Simpson](https://codepen.io/alvaromontoro/full/ZwKpdR)
 
