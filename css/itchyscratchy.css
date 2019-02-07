@@ -1,0 +1,660 @@
+
+@import url('https://fonts.googleapis.com/css?family=Damion|Luckiest+Guy');
+
+.character {
+  position: relative;
+  /* these values change from character to character */
+  width: 700px;
+  height: 600px;
+  margin: auto auto;
+  --blue: #0091ff;
+  --green: #c6fe75;
+  --yellow: #FDf885;
+  --pink: pink;
+  --gray: #777;
+  margin:0 ;
+}
+
+.character::before {
+  /* these values change from character to character */
+  left: 60px;
+  top: 30px;
+  width: 550px;
+  height: 550px;
+  filter: none;
+  background: var(--yellow);
+  box-shadow: inset 0 0 0 84px var(--green);
+}
+
+h1 {
+  font-family: 'Luckiest Guy', arial, sans-serif;
+  transform: translate(-50%, -50%) rotate(-28deg) scaleY(1.1);
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  font-size: 90px;
+  color: var(--red);
+  text-shadow: -4px 4px 0 #000;
+  font-weight: normal;
+}
+h1::before, h1::after {
+  content: "The";
+  display: block;
+  position: absolute;
+  top: -120px;
+  left: 30px;
+  color: #000;
+  font-family: 'Damion', arial, sans-serif;
+  text-shadow: none;
+}
+h1::after {
+  content: "Show";
+  top: 65px;
+  left: 130px;
+}
+
+#itchy {
+  width: 370px;
+  height: 270px;
+  top: 5px;
+  left: 15px;
+  position: absolute;
+}
+#itchy .eye {
+  width: 55px;
+  height: 55px;
+  background: black;
+}
+#itchy .eye-1 {
+  top: 140px;
+  left: 165px;
+  box-shadow: inset -7px 7px 0 20px #fff;
+}
+#itchy .eye-2 {
+  height: 50px;
+  width: 50px;
+  top: 117px;
+  left: 206px;
+  box-shadow: inset -4px 6px 0 18px #fff;
+}
+#itchy .nose {
+  width: 59px;
+  height: 41px;
+  background: var(--gray);
+  transform: rotate(-45deg);
+  top: 174px;
+  left: 217px;
+}
+#itchy .tooth {
+  width: 30px;
+  height: 40px;
+  background: #fff;
+  transform: rotate(-40deg);
+}
+#itchy .tooth-1 {
+  border-radius: 100px;
+  top: 172px;
+  left: 295px;
+}
+#itchy .tooth-2 {
+  width: 28px;
+  top: 157px;
+  left: 317px;
+}
+#itchy .upper-lip {
+  width: 230px;
+  height:115px;
+  top: 130px;
+  left: 130px;
+  box-shadow: inset 65px -25px 0 -4px var(--blue);
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  transform: rotate(-19deg);
+}
+#itchy .upper-lip::before {
+  width: 40px;
+  height: 18px;
+  border: 3px solid transparent;
+  border-right: 3px solid #000;
+  border-top: 3px solid #000;
+  border-radius: 100%;
+  right: 16px;
+  top: 72px;
+  transform: rotate(-3deg);
+  box-shadow: inset 0 0 0 10px var(--blue)
+} 
+#itchy .upper-lip::after {
+  width: 200px;
+  height: 180px;
+  top: -160px;
+  left: 150px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  border-radius: 100%;
+  transform: rotate(42deg);
+  box-shadow: -20px 40px 0 -6px var(--blue), -10px 50px 0 -7px var(--blue);
+}
+#itchy .ear {
+  background: var(--blue);
+}
+#itchy .ear-1 {
+  width: 131px;
+  height: 123px;
+  top: 90px;
+  left: 1px;
+}
+#itchy .ear-1::after {
+  top: 59px;
+  right: -10px;
+  width: 50px;
+  height: 30px;
+  background: var(--blue);
+}
+#itchy .ear-2 {
+  width: 123px;
+  height: 110px;
+  top: 4px;
+  left: 104px;
+}
+#itchy .ear-2::after {
+  width: 60px;
+  height: 30px;
+  bottom: -20px;
+  left: 32px;
+  background: var(--blue);
+  box-shadow: 15px -15px 0 -8px var(--blue), 33px -40px 0 -11px var(--blue), 
+  55px -25px 0 -13px  var(--blue), 40px -21px 0 -13px var(--blue);
+}
+#itchy .hair {
+  height: 80px;
+  width: 40px;
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+}
+#itchy .hair::after {
+  height: 78px;
+  width: 35px;
+  top: 0px;
+  left: -5px;
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  border-radius: 100%;
+  transform: rotate(-17deg);
+}
+#itchy .hair-1 {
+  top: -5px;
+  left:178px;
+  height: 290px;
+  width: 275px;
+  transform: rotate(21deg);
+}
+#itchy .hair-1::after {
+  height: 78px;
+  width: 15px;
+  top: 35px;
+  left: 33px;
+  transform: rotate(12deg);
+}
+#itchy .hair-2 {
+  left: 254px;
+  top: 80px;
+  transform: rotate(78deg);
+}
+#itchy .hair-2::after {
+  box-shadow: -6px 10px var(--blue);
+}
+#itchy .hair-3 {
+  height: 104px;
+  width: 60px;
+  left: 238px;
+  top: 63px;
+  transform: rotate(65deg);
+}
+#itchy .hair-3::after {
+  height: 70px;
+  width: 30px;
+  top: 2px;
+  left: 0px;
+  transform: rotate(-9deg);
+  box-shadow: -4px 10px var(--blue);
+}
+#itchy .neck  {
+  top: 196px;
+  left: 123px;
+  width: 95px;
+  height: 60px;
+  transform: rotate(2deg);
+  box-shadow: inset -1px -4px 0 -1px #000, inset 1px -4px 0 -1px #000, inset 0 -100px 0 -65px var(--blue);
+}
+#itchy .lip {
+  height: 20px;
+  width: 19px;
+  top: 215px;
+  left: 208px;
+  border-radius: 0 50px 50px 0;
+  border-left:0px solid transparent;
+  background: var(--blue)
+}
+#itchy .lip::after {
+  border-left: 3px solid #000;
+  border-bottom: 3px solid #000;
+  width:10px;
+  height: 7px;
+  top: -10px;
+  left: -8px;
+  box-shadow:-57px -82px 0 10px var(--blue), -54px -88px 0 10px var(--blue), -60px -77px 0 10px var(--blue), -40px -40px 0 40px var(--blue), -41px -30px 0 40px var(--blue);
+}
+#itchy .mouth {
+  top: 206px;
+  left: 149px;
+  height: 20px;
+  width: 48px;
+  box-shadow: inset 0 0 0 100px #000;
+  border-radius: 50px 0 0 300%;
+  border: 3px solid #000;
+  border-right: 0;
+}
+#itchy .mouth::after {
+  bottom: -3px;
+  right: -10px;
+  width: 10px;
+  border-bottom: 3px solid #000;
+}
+#itchy .mouth::before {
+  top: -9px;
+  left: 0px;
+  width: 40px;
+  height: 20px;
+  border-radius: 100%;
+  transform: rotate(10deg);
+  box-shadow: inset 0 7px 0 -1px #000, -1px 2px #000;
+}
+
+#itchy .mouth > div {
+  width: 80px;
+  height: 40px;
+  left: -14px;
+  top: -25px;
+  overflow: hidden;
+}
+#itchy .mouth > div::after {
+  width: 20px;
+  height: 16px;
+  top: 29px;
+  left: 14px;
+  border: 1px solid transparent;
+  border-top:2px solid #000;
+  border-radius: 100%;
+  transform: rotate(10deg);
+}
+#itchy .mouth > div::before {
+  width: 40px;
+  height: 20px;
+  background: var(--red);
+  top: 33px;
+  left: 10px;
+  border-radius: 100%;
+}
+#itchy .tail {
+  width: 40px;
+  height: 40px;
+  top: 185px;
+  left: 86px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  transform: rotate(-4deg);
+  box-shadow: 27px 20px 0 -7px var(--blue), 9px 9px var(--blue), 8px 12px #000;
+}
+
+#scratchy {
+  width: 300px;
+  height: 270px;
+  position: absolute;
+  bottom: 70px;
+  right: 25px;
+}
+#scratchy .eye {
+  width: 59px;
+  height: 59px;
+  background: #000;
+}
+#scratchy .eye-1 {
+  top: 65px;
+  left: 68px;
+  box-shadow: inset -8px 4px 0 21px var(--yellow);
+}
+#scratchy .eye-2 {
+  width: 61px;
+  height: 61px;
+  top: 108px;
+  left: 121px;
+  box-shadow: inset -8px 1px 0 22px var(--yellow);
+}
+#scratchy .mouth,
+#scratchy .mouth-2 {
+  width: 90px;
+  height: 58px;
+  transform: rotate(20deg);
+  top: 100px;
+  left: 17px;
+  background: var(--gray);
+}
+#scratchy .mouth-2 {
+  border: 0 solid transparent;
+  background: none;
+}
+#scratchy .mouth-2::after {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  transform: rotate(20deg);
+  top: -52px;
+  left: 77px;
+  box-shadow: 38px 4px 0 27px var(--gray), 18px -30px 0 16px var(--gray), 68px 0px 0 8px var(--gray);
+}
+#scratchy .mouth::before {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  transform: rotate(20deg);
+  top: -52px;
+  left: 77px;
+  background: var(--gray);
+}
+#scratchy .mouth::after {
+  width: 50px;
+  height: 20px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  top: 58px;
+  left: 122px;
+  transform: rotate(-12deg);
+} 
+#scratchy .tongue {
+  width: 55px;
+  height: 90px;
+  background: var(--red);
+  border-radius: 100px;
+  top: 140px;
+  left: 95px;
+  transform: rotate(50deg);
+}
+#scratchy .tongue::after {
+  width: 30px;
+  height: 30px;
+  top: 33px;
+  left: 18px;
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  border-radius: 100%;
+}
+#scratchy .tooth {
+  width: 40px;
+  height: 35px;
+  transform:  rotate(80deg) skewX(30deg);
+  border-radius: 10px 50%;
+  background: #fff;
+}
+#scratchy .tooth-1 {
+  top: 125px;
+  left: 55px;
+}
+#scratchy .tooth-2 {
+  top: 164px;
+  left: 113px;
+  transform:  rotate(60deg) skewX(30deg);
+}
+#scratchy .neck {
+  width: 270px;
+  height: 470px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  transform: rotate(25deg);
+  top: -228px;
+  left: 183px;
+  box-shadow: inset 0 -4px 0 -2px var(--gray);
+}
+#scratchy .nose {
+  width: 70px;
+  height: 50px;
+  top: 104px;
+  left: 65px;
+  transform: skewY(36deg) rotate(-15deg);
+  border-radius: 36px;
+  border-bottom: 3px solid transparent;
+  border-right:3px solid transparent;
+  box-shadow: inset 10px 20px 0 -6px var(--pink);
+}
+#scratchy .nose::after {
+  height: 10px;
+  width: 80px;
+  border: 3px solid transparent;
+  border-top: 0px solid var(--pink);
+  border-left: 3px solid #000;
+  border-bottom: 3px solid #000;
+  transform: skewY(-36deg) rotate(-2deg);
+  border-radius: 0 10px 0 200%;
+  top: 39px;
+  left: 4px;
+  box-shadow: inset 10px -4px 0 0px var(--pink);
+}
+#scratchy .nose::before {
+  width: 20px;
+  height: 20px;
+  background: var(--pink);
+  border-radius: 100%;
+  top: 6px;
+  left: 10px;
+  box-shadow: 0 0 0 5px var(--pink), 15px -3px 0 -2px var(--pink), -10px 13px 0 -2px var(--pink);
+}
+#scratchy .eyelid-1 {
+  width: 30px;
+  height: 55px;
+  top: 80px;
+  left: 73px;
+  border-radius: 100px;
+  border-right: 3px solid #000;
+  transform: rotate(-40deg);
+  box-shadow: 15px 0px var(--gray);
+}
+#scratchy .eyelid-1::after {
+  border-left: 3px solid #000;
+  border-top: 3px solid #000;
+  height: 15px;
+  width: 40px;
+  border-radius: 20px 0 0 0;
+  transform: rotate(55deg);
+  top: -9px;
+  left: 37px;
+  box-shadow: inset -20px 14px 0 -5px var(--gray);
+} 
+#scratchy .eyelid-2 {
+  width: 20px;
+  height: 20px;
+  top: 100px;
+  left: 127px;
+  transform: rotate(-30deg);
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  border-top: 3px solid #000;
+  background: var(--gray);
+  box-shadow: -2px -4px 0 0 var(--gray);
+}
+#scratchy .eyelid-2::after {
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  width: 55px;
+  height: 20px;
+  transform: rotate(53deg);
+  top: 3px;
+  box-shadow: 10px -10px 0 0 var(--gray);
+}
+#scratchy .ear {
+  height: 70px;
+  width: 40px;
+  border: 3px solid transparent;
+  transform: rotate(60deg) skewY(60deg);
+  background: var(--gray);
+}
+#scratchy .ear::before,
+#scratchy .ear::after  {
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  border-radius: 100%;
+  height: 100px;
+  width: 20px;
+  top:5px;
+  left: -12px;
+  transform: skewY(-55deg) rotate(-6deg);
+  box-shadow: inset 10px -15px 0 -7px var(--gray);
+}
+#scratchy .ear::after {
+  top:14px;
+  left: -14px;
+  transform: skewY(-55deg) rotate(-46deg);
+  box-shadow:  -10px 15px 0 -6px var(--gray);
+}
+#scratchy .ear-1 {
+  top: 12px;
+  left: 205px;
+}
+#scratchy .ear-2 {
+  top: 72px;
+  left: 295px;
+  transform: rotate(79deg) skewY(60deg);
+}
+#scratchy .ear-2::after {
+  box-shadow:  -20px 45px 0 5px var(--gray);
+}
+#scratchy .hair {
+  height: 30px;
+  width: 20px;
+  border: 3px solid transparent;
+  transform: rotate(60deg) skewY(60deg);
+}
+#scratchy .hair::before,
+#scratchy .hair::after  {
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  border-radius: 100%;
+  height: 30px;
+  width: 10px;
+  top:5px;
+  left: -12px;
+  transform: skewY(-55deg) rotate(-6deg);
+  box-shadow: inset 10px -15px 0 -7px var(--gray);
+}
+#scratchy .hair::after {
+  top:6px;
+  left: -9px;
+  border-radius: 0;
+  border: 0;
+  height:28px;
+  border-left: 3px solid #000;
+  transform: skewY(-55deg) rotate(-46deg);
+  box-shadow:  -4px 6px 0 0px var(--gray);
+}
+#scratchy .hair-1 {
+  top: 66px;
+  left: 197px;
+  box-shadow:inset  0 0 0 30px var(--gray);
+}
+#scratchy .hair-2 {
+  top: 80px;
+  left: 210px;
+  box-shadow:inset  0 0 0 10px var(--gray);
+  transform: rotate(70deg) skewY(60deg);
+}
+#scratchy .hair-2::after {
+  height: 25px;
+}
+#scratchy .hair-3 {
+  top: 95px;
+  left: 220px;
+  height:15px;
+  width:15px;
+  box-shadow:inset  0 0 0 10px var(--gray);
+  transform: rotate(80deg) skewY(65deg);
+}
+#scratchy .hair-3::before {
+  height:30px
+}
+#scratchy .hair-3::after {
+  height:18px;
+}
+#scratchy .back {
+  width: 65px;
+  height: 50px;
+  border: 3px  solid  transparent;
+  border-top: 2px solid transparent;
+  border-left: 3px solid #000;
+  border-bottom: 3px solid #000;
+  top: 145px;
+  left: 213px;
+  transform: rotate(-18deg);
+  box-shadow: -10px 10px 0 1px var(--gray);
+}
+#scratchy .back::after {
+  width: 90px;
+  height: 80px;
+  border: 3px solid transparent;
+  border-radius: 100%;
+  border-bottom: 3px solid #000;
+  transform: rotate(-20deg);
+  left: -50px;
+  top: -0px;
+  box-shadow: inset 30px 0px 0 0 var(--gray);
+}
+
+#scratchy .backhair {
+  height: 30px;
+  width: 20px;
+  border: 3px solid transparent;
+  transform: rotate(60deg) rotateY(180deg) skewY(60deg);
+}
+#scratchy .backhair::before,
+#scratchy .backhair::after  {
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  border-radius: 100%;
+  height: 50px;
+  width: 20px;
+  top:6px;
+  left: -14px;
+  transform: skewY(-55deg) rotate(-9deg);
+  box-shadow: inset 10px -30px 0 -8px var(--gray);
+}
+#scratchy .backhair::after {
+  top:6px;
+  left: -9px;
+  border-radius: 0;
+  border: 0;
+  height:34px;
+  border-left: 3px solid #000;
+  transform: skewY(-55deg) rotate(-46deg);
+  box-shadow:  -10px 10px 0 -3px var(--gray), -5px 4px 0 -2px var(--gray);
+}
+#scratchy .backhair-1 {
+  top: 212px;
+  left: 260px;
+}
+#scratchy .backhair-2 {
+  top: 237px;
+  left: 250px;
+  transform: rotate(70deg) rotateY(180deg) skewY(60deg);
+}
+#scratchy .backhair-2::before {
+  height: 65px;
+  top: 7px;
+  left: -15px;
+  transform: skewY(-55deg) rotate(-13deg);
+  box-shadow: inset 12px -20px 0 -8px var(--gray), inset 12px -40px 0 -9px var(--gray);
+}
+#scratchy .backhair-2::after {
+  height: 30px;
+}
