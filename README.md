@@ -10,6 +10,7 @@ See them online on CodePen (in alphabetical order):
 - [Kang (alien)](https://codepen.io/alvaromontoro/full/omWOKR)
 - [Lisa Simpson](https://codepen.io/alvaromontoro/full/bzVjeK)
 - [Marge Simpson](https://codepen.io/alvaromontoro/full/ZwKpdR)
+- [Sideshow Bob](https://codepen.io/alvaromontoro/full/bzMZRy)
 
 
 ---
