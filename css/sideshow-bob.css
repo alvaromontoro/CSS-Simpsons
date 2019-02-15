@@ -1,0 +1,985 @@
+html {
+  --yellow: #FDD835; 
+  --blue: #448cb1;
+  --red: #c10031;
+  --green: #097422;
+  --brown: #9f2500;
+  background: #fff;
+}
+
+.character {
+  /* these values change from character to character */
+  width: 400px;
+  height: 720px;
+  margin: auto auto;
+}
+
+.character::after {
+  /* this value changes from character to character */ 
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/c/c8/C-bob.png); */
+}
+
+.character::before {
+  /* these values change from character to character */
+  left: 20px;
+  top: 666px;
+  width: 330px;
+  height: 60px;
+}
+
+/* while drawing */
+.character > div {
+  opacity: 1;
+  perspective: 1000px;
+}
+
+.character > div > div,
+.character > div > div > div {
+  transform-origin: center center;
+}
+
+.hb::before,
+.ha::after,
+.hba::before,
+.hba::after,
+.hab::before,
+.hab::after {
+  transform-origin: center center;
+}
+
+
+#hair {
+  width: 60px;
+  height: 60px;
+  background: var(--red);
+  top: 80px;
+  left: 190px;
+  box-shadow: 
+    0 -1px 0 20px var(--red),
+    -20px -10px 0 20px var(--red),
+    46px 0px 0 13px var(--red),
+    /******/
+    -151px 32px 0 -26px var(--red),
+    -81px -15px 0 -10px var(--red),
+    -111px 0px 0 -16px var(--red),
+    -153px 38px 0 -26px var(--red),
+    -155px 30px 0 -26px var(--red),
+    -143px 21px 0 -17px var(--red),
+    -136px 8px 0 -17px var(--red),
+    -124px -8px 0 -17px var(--red),
+    -106px -20px 0 -17px var(--red),
+    -85px -28px 0 -15px var(--red),
+    -62px -35px 0 -15px var(--red),
+    -120px 15px 0 -22px var(--red),
+    -89px 3px 0 -23px var(--red),
+    -103px 6px 0 -18px var(--red),
+    -153px 38px 0 -23px #000,
+    -155px 30px 0 -23px #000,
+    -143px 21px 0 -14px #000,
+    -136px 8px 0 -14px #000,
+    -124px -8px 0 -14px #000,
+    -106px -20px 0 -14px #000,
+    -85px -28px 0 -12px #000,
+    -62px -35px 0 -12px #000,
+    -120px 15px 0 -19px #000,
+    -89px 3px 0 -20px #000,
+    -103px 6px 0 -15px #000,
+    /*****/
+    -1px 84px 0 -26px var(--red),
+    0 40px 0 -10px var(--red),
+    -1px 90px 0 -26px var(--red),
+    2px 73px 0 -20px var(--red),
+    -3px 77px 0 -22px var(--red),
+    -10px 63px 0 -22px var(--red),
+    -14px 46px 0 -19px var(--red),
+    6px 58px 0 -19px var(--red),
+    18px 47px 0 -26px var(--red),
+    -1px 90px 0 -23px #000,
+    2px 73px 0 -17px #000,
+    -3px 77px 0 -19px #000,
+    -10px 63px 0 -19px #000,
+    -14px 46px 0 -16px #000,
+    6px 58px 0 -16px #000,
+    18px 47px 0 -23px #000,
+    /******/
+    -57px 43px 0 -14px var(--red),
+    -59px 74px 0 -27px var(--red),
+    -60px 79px 0 -25px var(--red),
+    -61px 63px 0 -21px var(--red),
+    -68px 48px 0 -23px var(--red),
+    -55px 68px 0 -24px var(--red),
+    -47px 53px 0 -21px var(--red),
+    -36px 40px 0 -19px var(--red),
+    -60px 79px 0 -22px #000,
+    -61px 63px 0 -18px #000,
+    -68px 48px 0 -20px #000,
+    -55px 68px 0 -21px #000,
+    -47px 53px 0 -18px #000,
+    -36px 40px 0 -16px #000,
+    /******/
+    -80px 40px 0 -20px var(--red),
+    -60px 0px 0 4px var(--red),
+    -95px 60px 0 -17px var(--red),
+    -120px 105px 0 -27px var(--red),
+    -121px 110px 0 -25px var(--red),
+    -118px 94px 0 -20px var(--red),
+    -114px 77px 0 -20px var(--red),
+    -107px 78px 0 -19px var(--red),
+    -108px 59px 0 -19px var(--red),
+    -93px 45px 0 -15px var(--red),
+    -78px 26px 0 -15px var(--red),
+    -89px 66px 0 -22px var(--red),
+    -75px 56px 0 -22px var(--red),
+    -121px 110px 0 -22px #000,
+    -118px 94px 0 -17px #000,
+    -114px 77px 0 -17px #000,
+    -107px 78px 0 -16px #000,
+    -108px 59px 0 -16px #000,
+    -93px 45px 0 -12px #000,
+    -78px 26px 0 -12px #000,
+    -89px 66px 0 -19px #000,
+    -75px 56px 0 -19px #000,
+    /*******/
+    39px 49px 0 -4px var(--red),
+    49px 69px 0 -4px var(--red),
+    51px 110px 0 -15px var(--red),
+    52px 99px 0 -11px var(--red),
+    35px 159px 0 -27px var(--red),
+    33px 164px 0 -26px var(--red),
+    39px 149px 0 -20px var(--red),
+    39px 129px 0 -20px var(--red),
+    47px 137px 0 -20px var(--red),
+    57px 123px 0 -20px var(--red),
+    64px 107px 0 -20px var(--red),
+    38px 110px 0 -21px var(--red),
+    33px 90px 0 -20px  var(--red),
+    25px 71px 0 -20px  var(--red),
+    67px 88px 0 -19px var(--red),
+    70px 71px 0 -20px var(--red),
+    33px 164px 0 -23px #000,
+    39px 149px 0 -17px #000,
+    39px 129px 0 -17px #000,
+    47px 137px 0 -17px #000,
+    57px 123px 0 -17px #000,
+    64px 107px 0 -17px #000,
+    38px 110px 0 -18px #000,
+    33px 90px 0 -17px #000,
+    25px 71px 0 -17px #000,
+    67px 88px 0 -16px #000,
+    70px 71px 0 -17px #000,
+    /******/
+    80px 40px 0 -20px var(--red),
+    66px 60px 0 -1px var(--red),
+    98px 110px 0 -23px var(--red),
+    103px 130px 0 -25px var(--red),
+    103px 135px 0 -24px var(--red),
+    97px 122px 0 -22px var(--red),
+    93px 95px 0 -11px var(--red),
+    106px 122px 0 -24px var(--red),
+    107px 110px 0 -22px var(--red),
+    100px 73px 0 -20px var(--red),
+    94px 57px 0 -20px var(--red),
+    85px 42px 0 -22px var(--red),
+    103px 135px 0 -21px #000,
+    97px 122px 0 -19px #000,
+    93px 95px 0 -8px #000,
+    106px 122px 0 -21px #000,
+    107px 110px 0 -19px #000,
+    100px 73px 0 -17px #000,
+    94px 57px 0 -17px #000,
+    85px 42px 0 -19px #000,
+    /******/
+    87px 25px 0 -5px var(--red),
+    133px 70px 0 -26px var(--red),
+    137px 75px 0 -25px var(--red),
+    118px 46px 0 -13px var(--red),
+    127px 66px 0 -23px var(--red),
+    132px 60px 0 -23px var(--red),
+    119px 26px 0 -21px var(--red),
+    103px 13px 0 -17px var(--red),
+    88px -3px 0 -20px var(--red),
+    137px 75px 0 -22px #000,
+    118px 46px 0 -10px #000,
+    127px 66px 0 -20px #000,
+    132px 60px 0 -20px #000,
+    119px 26px 0 -18px #000,
+    103px 13px 0 -14px #000,
+    88px -3px 0 -17px #000,
+    /******/ 
+    -40px -47px 0 5px var(--red),
+    -115px -74px 0 -26px var(--red), 
+    -120px -73px 0 -25px var(--red),
+    -72px -50px 0 -25px var(--red),
+    -81px -73px 0 -12px var(--red),
+    -101px -75px 0 -17px var(--red),
+    -58px -80px 0 -17px var(--red),
+    -36px -79px 0 -20px var(--red),
+    -19px -71px 0 -21px var(--red),
+    -6px -57px 0 -21px var(--red),
+    -120px -73px 0 -22px #000,
+    -72px -50px 0 -22px #000,
+    -81px -73px 0 -9px #000,
+    -101px -75px 0 -14px #000,
+    -58px -80px 0 -14px #000,
+    -36px -79px 0 -17px #000,
+    -19px -71px 0 -18px #000,
+    -6px -57px 0 -18px #000,
+    /******/ 
+    28px -55px 0 -5px var(--red),
+    49px -77px 0 -17px var(--red),
+    79px -91px 0 -25px var(--red),
+    68px -92px 0 -23px var(--red),
+    49px -87px 0 -18px var(--red),
+    63px -84px 0 -20px var(--red),
+    54px -68px 0 -22px var(--red),
+    46px -50px 0 -20px var(--red),
+    6px -70px 0 -22px  var(--red),
+    28px -77px 0 -17px var(--red),
+    79px -91px 0 -22px #000,
+    68px -92px 0 -20px #000,
+    49px -87px 0 -15px #000,
+    63px -84px 0 -17px #000,
+    54px -68px 0 -19px #000,
+    46px -50px 0 -17px #000,
+    6px -70px 0 -19px #000,
+    28px -77px 0 -14px #000,
+    /*****/
+    130px -23px 0 -20px var(--red),
+    120px -27px 0 -20px var(--red),
+    80px -20px 0 -10px var(--red),
+    147px -16px 0 -26px var(--red),
+    139px -16px 0 -24px var(--red),
+    135px -26px 0 -23px var(--red),
+    125px -36px 0 -25px var(--red),
+    123px -18px 0 -21px var(--red),
+    100px -18px 0 -15px var(--red),
+    108px -34px 0 -17px var(--red),
+    88px -39px 0 -17px  var(--red),
+    66px -38px 0 -17px  var(--red),
+    147px -16px 0 -23px #000,
+    139px -16px 0 -21px #000,
+    135px -26px 0 -20px #000,
+    125px -36px 0 -22px #000,
+    123px -18px 0 -18px #000,
+    100px -18px 0 -12px #000,
+    108px -34px 0 -14px #000,
+    88px -39px 0 -14px #000,
+    66px -38px 0 -14px #000;
+}
+
+#ear {
+  top: 254px;
+  left: 206px;
+  width: 25px;
+  height: 26px;
+  border-left: 3px solid var(--yellow);
+  background: var(--yellow)
+}
+#ear::after {
+  top: 5px;
+  left: 4px;
+  width: 6px;
+  height: 7px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+  transform: rotate(45deg)
+}
+#back {
+  top: 125px;
+  left: 225px;
+  height: 250px;
+  width: 80px;
+  box-shadow: inset 4px 0 0 -1px #000, -30px 0 var(--yellow), -53px -23px 0 8px var(--yellow), -60px -30px 0 7px var(--yellow), -56px -20px 0 8px #000;
+  transform: rotate(20deg);
+}
+#back::before {
+  height: 40px;
+  width: 20px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-right: 3px solid #000;
+  top: 231px;
+  left: -33px;
+  transform: rotate(-10deg);
+  box-shadow: 18px 0 0 11px var(--yellow);
+}
+#back::after {
+  top: 157px;
+  width: 30px;
+  height: 80px;
+  background: var(--yellow);
+  left: -46px;
+  transform: rotate(-20deg);
+  border-radius: 100%;
+}
+#mouth {
+  top: 272px;
+  left: 140px;
+  width: 60px;
+  height: 20px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  transform: rotate(-4deg);
+  background: var(--yellow)
+}
+#mouth::before {
+  border-radius: 100%;
+  height: 12px;
+  width: 13px;
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  right: -14px;
+  transform: rotate(-15deg);
+}
+#mouth::after {
+  left:-22px;
+  top: 9px;
+  height: 4px;
+  width: 25px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  transform: rotate(6deg);
+  box-shadow: -1px -6px 0 -0px var(--yellow);
+}
+#lip {
+  top: 283px;
+  left: 146px;
+  width: 17px;
+  height: 17px;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: rotate(-60deg);
+  box-shadow: inset 0 0 0 10px var(--yellow);
+}
+#upper-lip {
+  top: 274px;
+  left: 120px;
+  width: 30px;
+  height: 10px;
+  border: 3px solid var(--yellow);
+  border-top: 3px solid #000;
+  transform: rotate(-20deg);
+  box-shadow: inset 0 0 0 20px var(--yellow);
+}
+#upper-lip::before {
+  top: -2px;
+  left: -3px;
+  width: 5px;
+  height: 6px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  border-top: 3px solid #000;
+  transform: rotate(-45deg);
+}
+#upper-lip::after {
+  top: -18px;
+  left: 17px;
+  width: 16px;
+  height: 14px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
+  transform: rotate(-15deg);
+  box-shadow: 0 15px var(--yellow);
+}
+.eye {
+  width: 37px;
+  height: 30px;
+  background: #fff;
+}
+
+#eye-1 {
+  top: 200px;
+  left: 173px;
+}
+#eye-1::after {
+  top: 9px;
+  left: -8px;
+  width: 40px;
+  height: 6px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  box-shadow: 0 -10px 0 2px var(--yellow);
+}
+#eye-1::before {
+  top: 10px;
+  left: 17px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #000;
+}
+#eye-lines-1 {
+  width: 43px;
+  height: 20px;
+  top: 195px;
+  left: 170px;
+}
+#eye-lines-1::before {
+  top: 5px;
+  left: 1px;
+  width: 10px;
+  height: 15px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  transform: rotate(25deg);
+}
+#eye-lines-1::after {
+  top: 8px;
+  left: 25px;
+  width: 10px;
+  height: 12px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-right: 3px solid #000;
+  transform: rotate(-20deg);
+}
+#eye-2 {
+  top: 196px;
+  left: 139px;
+  border-right: 3px solid var(--yellow);
+  box-shadow: inset -4px 10px var(--yellow);
+}
+#eye-2::before {
+  top: 12px;
+  left: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #000;
+}
+#eye-2::after {
+  top: 11px;
+  left: -6px;
+  width: 40px;
+  height: 6px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  box-shadow: 6px -3px var(--yellow);
+}
+#eye-lines-2 {
+  width: 30px;
+  height:20px;
+  top: 200px;
+  left: 130px;
+}
+#eye-lines-2::before {
+  top: -18px;
+  left: 8px;
+  width: 30px;
+  height: 13px;
+  border-radius: 100% 0 0 0;
+  box-shadow: inset 2px 5px 0 -2px #000, inset 6px 6px 0 14px var(--yellow), 9px 6px 0 6px var(--yellow), 19px 12px 0 6px var(--yellow), 3px 1px 0 1px var(--yellow);
+  transform: rotate(-40deg);
+}
+
+#ojeras {
+  width: 40px;
+  height: 30px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  top: 207px;
+  left: 170px;
+  transform: rotate(14deg);
+}
+#ojeras::after {
+  left: -29px;
+  top: 14px;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  border: 3px solid #000;
+  background: var(--yellow);
+}
+#nose {
+  top: 259px;
+  left: 138px;
+  width: 11px;
+  height: 11px;
+  border-top: 3px solid transparent;
+  border-right: 3px solid transparent;
+  background: var(--yellow);
+  transform: rotate(-4deg)
+}
+#nose::before {
+  top: -37px;
+  left: 2px;
+  left: 1.5px;
+  width: 13px;
+  height: 40px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  transform: rotate(28deg);
+  box-shadow: inset 0 0 0 10px var(--yellow);
+}
+#nose::after {
+  top: -73px;
+  left: 8px;
+  width: 12px;
+  height: 44px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-right: 3px solid #000;
+  transform: rotate(26deg);
+  box-shadow:  10px 0 0 0px var(--yellow);
+}
+#nose-line {
+  top: 260px;
+  left: 141px;
+  height: 15px;
+  width: 29px;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  transform: rotate(-30deg);
+  box-shadow: 5px -10px var(--yellow);
+}
+
+#arm-1 {
+  border-radius: 50% 80% 0 80%;
+  width: 140px;
+  height: 90px;
+  transform: rotate(-20deg);
+  top: 362px;
+  left: 90px;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+  box-shadow: inset 14px 14px 0 8px var(--yellow);
+}
+#arm-1::before {
+  width: 1px;
+  height: 10px;
+  border-left: 3px solid #000;
+  border-radius: 100%;
+  top: 30px;
+  left: 29px;
+  box-shadow: -10px 0 0 8px var(--yellow);
+}
+#arm-1::after {
+  width: 40px;
+  height: 10px;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  border-radius: 100%;
+  transform: rotate(-10deg);
+  top: 24px;
+  left: 24px;
+  box-shadow: 0 -3px 0 0 var(--yellow);
+}
+#arm-2 {
+  top: 365px;
+  left: 170px;
+  width: 90px;
+  height: 102px;
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
+  box-shadow: /*inset -3.5px -3.5px 0 -1px #000,*/ inset -10px -10px 0 15px var(--yellow);
+  border-radius: 0 70px 20px 60px;
+  transform: rotate(-20deg);
+}
+#arm-2::before {
+  top: 70px;
+  left: 40px;
+  width: 20px;
+  height: 10px;
+  border-top: 3px solid #000;
+  background: var(--yellow);
+}
+#arm-2::after {
+  top: 47px;
+  left: 53px;
+  width: 5px;
+  height: 30px;
+  border-radius: 100%;
+  border-right: 3px solid #000;
+  transform: rotate(-5deg);
+  box-shadow: 10px 0 0 9px var(--yellow);
+}
+#knife {
+  height: 100px;
+  width: 40px;
+  border-radius:0 3px 100% 0;
+  border-bottom:2px solid #000;
+  background: #ccc;
+  top:505px;
+  left: 234px;
+  transform: rotate(-37deg);
+  box-shadow: 0 -4px 0 -3px #bbb, 0 -4px #000;
+}
+#knife::after {
+  width: 14px;
+  height: 20px;
+  border: 3px solid #000;
+  background: var(--brown);
+  border-radius: 5px;
+  top: -26px;
+  left: -3px;
+}
+#pants {
+  top: 430px;
+  left: 90px;
+  width: 132px;
+  height: 100px;
+  background: var(--blue);
+}
+.pernera {
+  width: 60px;
+  height: 380px;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  background: var(--blue);
+  transform: skewX(5deg) skewY(-4deg) rotateX(-40deg) rotate(-0.5deg);
+}
+#pernera-1 {
+  top: 403px;
+  left: 163px;
+}
+#pernera-1::after {
+  width: 40px;
+  height: 30px;
+  top: -14px;
+  box-shadow: -3px 0 0 3px var(--blue);
+}
+#pernera-2 {
+  height: 400px;
+  top: 390px;
+  left: 127px;
+}
+#pants-bottom {
+  top: 650px;
+  left: 150px;
+  height: 20px;
+  width: 100px;
+}
+#pants-bottom::before {
+  top: -4px;
+  left: -2px;
+  width: 50px;
+  height:20px;
+  border-radius: 100%;
+  box-shadow: inset 0 -4px 0 -1px #000, inset 0 0 0 10px var(--blue);
+  transform: rotate(-5deg);
+}
+#pants-bottom::after {
+  top: -3px;
+  left: 30px;
+  width: 53px;
+  height:20px;
+  border-radius: 100%;
+  box-shadow: inset 0 -4px 0 -1px #000, inset 0 0 0 10px var(--blue);
+  transform: rotate(-4deg);
+}
+.shoe {
+  width: 117px;
+  height: 28px;
+  background: var(--brown);
+}
+.shoe::before {
+  width: 158px;
+  border-radius: 100%;
+  height: 32px;
+  border: 3px solid #000;
+  border-top: 3px solid transparent;
+  top: -10px;
+  left: -49px;
+  transform: rotate(3deg);
+  box-shadow: inset 1px -3px var(--brown);
+}
+.shoe::after {
+  width: 158px;
+  border-radius: 100%;
+  height: 30px;
+  top: -7px;
+  left: -48px;
+  box-shadow: inset 0 -4px 0 -1px #000, inset 0 -10px 0 5px var(--brown);
+  transform: rotate(4deg);
+}
+#shoe-1 {
+  top: 675px;
+  left: 230px;
+}
+#shoe-2 {
+  top: 671px;
+  left: 28px;
+  transform: rotate(0deg) rotateY(180deg);
+}
+.shoe-body {
+  top: 657px;
+  left: 220px;
+  width: 60px;
+  height: 13px;
+}
+.shoe-body::before {
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 13px;
+  border-radius: 100%;
+  box-shadow: 0 3px 0 -1px #000, -14px 22px 0 14px var(--brown);
+  transform: rotate(20deg);
+}
+#shoe-body-1::after {
+  width: 5px;
+  height: 28px;
+  border-radius: 100%;
+  border-left: 3px solid #000;
+  top: 2px;
+  left: -37px;
+}
+#shoe-body-2 {
+  left: 100px;
+  transform:rotateY(180deg);
+}
+#shoe-body-2::before {
+  box-shadow: 0 3px 0 -1px #000, -14px 22px 0 10px var(--brown);
+}
+#shirt {
+  width: 200px;
+  height: 190px;
+  top: 300px;
+  left: 80px;
+  overflow:hidden;
+  abackground: rgba(0,0,255,0.2)
+}
+.shirt-bottom {
+  width: 149px;
+  height: 20px;
+  top: 472px;
+  left: 80px;
+  transform: rotate(4deg);
+  background: var(--green);
+}
+#shirt-bottom {
+  top: 172px;
+  left:  0;
+  background: none;
+  border: 3px solid transparent;
+  border-top: 3px solid #000;
+  box-shadow: 0 -5px 0 -4px var(--green), 0 -10px 0 -3px var(--green), 0 -15px 0 -3px var(--green);
+}
+#shirt-bottom::before {
+  width:70px;
+  height:110px;
+  border: 3px solid transparent;
+  border-left: 3px solid #000;
+  border-radius: 100%;
+  transform: rotate(40deg);
+  top: -70px;
+  left: 6px;
+  box-shadow: inset 22px 40px 0 -10px var(--green);
+}
+#shirt-bottom::after {
+  width:30px;
+  height:70px;
+  border: 3px solid transparent;
+  border-right: 3px solid #000;
+  border-radius: 100%;
+  transform: rotate(-18deg);
+  top: -55px;
+  left: 108px;
+  box-shadow: inset -15px 37px 0 -10px var(--green);
+}
+.sleeve {
+  width:48px;
+  height:55px;
+  border-radius: 100% 100% 0 0;
+  overflow: hidden;
+}
+.sleeve > div {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 3px solid #000;
+  top: -65px;
+  left: -36px; 
+  overflow: hidden;
+  box-shadow: inset 0 -20px 0 -12px var(--green);
+}
+.sleeve > div::before {
+  border-radius: 100%;
+  height: 75px;
+  width: 42px;
+  top: 67px;
+  left: 33px;
+  border: 3px solid #000;
+  box-shadow: inset 0 40px 0 -11px var(--green);
+}
+.sleeve > div::after {
+  width: 33px;
+  height: 20px;
+  top: 90px;
+  left: 40px;
+  background: var(--green);
+}
+#sleeve-1 {
+  top: 359px;
+  left: 203px;
+  transform: rotate(-35deg);
+}
+#sleeve-2 {
+  top: 352px;
+  left: 130px;
+  transform: rotate(68deg);
+}
+#sleeve-2 > div::before {
+  border-right: 0;
+  border-top: 3px solid transparent;
+}
+#shirt-neck-back {
+  width: 65px;
+  height: 20px;
+  border-top: 4px solid #000;
+  background: var(--green);
+  box-shadow: -1px 13px 0 5px var(--green);
+  top: 340px;
+  left: 160px;
+  transform: rotate(-5deg);
+}
+#shirt-v-neck {
+  height: 27px;
+  width: 7px;
+  border-left: 3px solid #000;
+  background: var(--green);
+  top: 349px;
+  left: 156px;
+  transform: rotate(24deg);
+}
+#shirt-v-neck::before {
+  transform: rotate(-40deg);
+  height: 36px;
+  width: 4px;
+  top: -3px;
+  left: 7px;
+  border-radius: 100%;
+  border-right: 3px solid #000;
+  box-shadow: inset 0px -20px 0 0px var(--green), -8px 24px 0 5px var(--green);
+}
+#shirt-v-neck::after {
+  top: -5px;
+  height: 33px;
+  left: 21px;
+  width: 30px;
+  border-left: 3px solid #000;
+  transform: rotate(3deg);
+  background: var(--green);
+  box-shadow: 0 45px 0 12px var(--green);
+}
+#shirt-left {
+  top: 350px;
+  left: 133px;
+  width: 10px;
+  height: 100px;
+  border: 3px solid transparent;
+  border-right: 3px solid #000;
+  transform: rotate(33deg);
+  box-shadow: 8px 10px var(--green);
+}
+#shirt-left::after {
+  transform: rotate(-33deg);
+  width: 6px;
+  border-top: 3px solid #000;
+  top: 13px;
+  left:-1px;
+}
+#shirt-right {
+  width: 20px;
+  height: 100px;
+  border-right: 3px solid #000;
+  top: 370px;
+  left: 205px;
+  background: var(--green);
+  box-shadow: -10px 0 0 10px var(--green);
+}
+#shirt-neck-right-1 {
+  top: 343px;
+  left: 220px;
+  height: 22px;
+  width: 10px;
+  border-right: 3px solid #000;
+  transform: rotate(-20deg);
+  box-shadow: inset 0px -15px 0 0 var(--green);
+}
+#shirt-neck-right-1::before {
+  left: -36px;
+  top:-11px;
+  width: 42px;
+  height: 10px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  transform: rotate(5deg);
+  box-shadow: 0 8px 0 -5px var(--green), 0 12px 0 -5px var(--green), -3px 18px 0 -2px var(--green);
+}
+#shirt-neck-right-1::after {
+  height: 30px;
+  border-left: 3px solid #000;
+  left: -30px;
+}
+#shirt-neck-right-2 {
+  width: 49px;
+  height: 20px;
+  top: 358px;
+  left: 187px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid #000;
+  transform: rotate(-35deg)
+}
+#shirt-bg-1 {
+  width: 40px;
+  height: 40px;
+  background: var(--green);
+  top: 430px;
+  left: 110px;
+  box-shadow: -10px 0 0 -3px var(--green), 40px 0 0 4px var(--green);
+}
+#shirt-bg-2 {
+  width: 146px;
+  height: 50px;
+  border-radius: 100%;
+  background: var(--green);
+  top:450px;
+  left: 82px;
+  transform: rotate(4deg)
+}
+
+#links {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(45deg);
+}
+
+#links a {
+  display: block;
+  background: black;
+  color: white;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 3px;
+  font-family: Arial, Verdana, sans-serif;
+}
+
+#links a:nth-child(2) {
+  background: green;
+}
+
+@media all and (max-width: 684px) {
+  #links {
+    display: none;
+  }
+}
