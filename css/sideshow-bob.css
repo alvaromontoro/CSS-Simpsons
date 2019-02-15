@@ -15,6 +15,7 @@ html {
 }
 
 .character::after {
+  opacity: 0;
   /* this value changes from character to character */ 
   background-image: url(https://upload.wikimedia.org/wikipedia/en/c/c8/C-bob.png); */
 }
@@ -30,7 +31,6 @@ html {
 /* while drawing */
 .character > div {
   opacity: 1;
-  perspective: 1000px;
 }
 
 .character > div > div,
@@ -632,27 +632,30 @@ html {
   background: var(--blue);
 }
 .pernera {
-  width: 60px;
-  height: 380px;
+  width: 50px;
+  height: 144px;
   border-left: 3px solid #000;
-  border-right: 3px solid #000;
   background: var(--blue);
-  transform: skewX(5deg) skewY(-4deg) rotateX(-40deg) rotate(-0.5deg);
 }
 #pernera-1 {
-  top: 403px;
+  background:var(--blue);
+  top: 513px;
   left: 163px;
+  transform: rotate(-13deg)
 }
-#pernera-1::after {
-  width: 40px;
-  height: 30px;
-  top: -14px;
-  box-shadow: -3px 0 0 3px var(--blue);
+#pernera-1::after  {
+  transform: rotate(4deg);
+  height: 150px;
+  width: 20px;
+  background: var(--blue);
+  left: 33px;
+  border-right: 3px solid #000;
 }
 #pernera-2 {
-  height: 400px;
-  top: 390px;
-  left: 127px;
+  height: 170px;
+  top: 486px;
+  left: 122px;
+  transform: rotate(-17deg);
 }
 #pants-bottom {
   top: 650px;
@@ -710,7 +713,7 @@ html {
 #shoe-2 {
   top: 671px;
   left: 28px;
-  transform: rotate(0deg) rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .shoe-body {
   top: 657px;
@@ -736,11 +739,14 @@ html {
   left: -37px;
 }
 #shoe-body-2 {
+  top: 657px;
   left: 100px;
-  transform:rotateY(180deg);
+  width: 60px;
+  height: 13px;
 }
 #shoe-body-2::before {
-  box-shadow: 0 3px 0 -1px #000, -14px 22px 0 10px var(--brown);
+  box-shadow: 0 3px 0 -1px #000,14px 19px 0 13px var(--brown);
+  transform: rotate(-20deg);
 }
 #shirt {
   width: 200px;
@@ -748,7 +754,6 @@ html {
   top: 300px;
   left: 80px;
   overflow:hidden;
-  abackground: rgba(0,0,255,0.2)
 }
 .shirt-bottom {
   width: 149px;
@@ -757,14 +762,13 @@ html {
   left: 80px;
   transform: rotate(4deg);
   background: var(--green);
+  box-shadow: inset 0 -4px 0 -1px #000;
 }
 #shirt-bottom {
   top: 172px;
   left:  0;
   background: none;
-  border: 3px solid transparent;
-  border-top: 3px solid #000;
-  box-shadow: 0 -5px 0 -4px var(--green), 0 -10px 0 -3px var(--green), 0 -15px 0 -3px var(--green);
+  box-shadow: inset 0 4px 0 -1px #000, 0 -5px 0 -4px var(--green), 0 -10px 0 -3px var(--green), 0 -15px 0 -3px var(--green);
 }
 #shirt-bottom::before {
   width:70px;
@@ -773,8 +777,8 @@ html {
   border-left: 3px solid #000;
   border-radius: 100%;
   transform: rotate(40deg);
-  top: -70px;
-  left: 6px;
+  top: -67px;
+  left: 9px;
   box-shadow: inset 22px 40px 0 -10px var(--green);
 }
 #shirt-bottom::after {
@@ -784,8 +788,8 @@ html {
   border-right: 3px solid #000;
   border-radius: 100%;
   transform: rotate(-18deg);
-  top: -55px;
-  left: 108px;
+  top: -52px;
+  left: 111px;
   box-shadow: inset -15px 37px 0 -10px var(--green);
 }
 .sleeve {
@@ -874,30 +878,27 @@ html {
   box-shadow: 0 45px 0 12px var(--green);
 }
 #shirt-left {
-  top: 350px;
-  left: 133px;
+  top: 353px;
+  left: 132px;
   width: 10px;
   height: 100px;
-  border: 3px solid transparent;
-  border-right: 3px solid #000;
   transform: rotate(33deg);
-  box-shadow: 8px 10px var(--green);
+  box-shadow: inset -3px 0 #000, 8px 10px var(--green);
 }
 #shirt-left::after {
   transform: rotate(-33deg);
   width: 6px;
   border-top: 3px solid #000;
   top: 13px;
-  left:-1px;
+  left:1px;
 }
 #shirt-right {
   width: 20px;
   height: 100px;
-  border-right: 3px solid #000;
   top: 370px;
   left: 205px;
   background: var(--green);
-  box-shadow: -10px 0 0 10px var(--green);
+  box-shadow: inset -3px 0 #000, -10px 0 0 10px var(--green);
 }
 #shirt-neck-right-1 {
   top: 343px;
