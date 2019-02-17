@@ -11,6 +11,7 @@ See them online on CodePen (in alphabetical order):
 - [Lisa Simpson](https://codepen.io/alvaromontoro/full/bzVjeK)
 - [Marge Simpson](https://codepen.io/alvaromontoro/full/ZwKpdR)
 - [Sideshow Bob](https://codepen.io/alvaromontoro/full/bzMZRy)
+- [Troy McClure](https://codepen.io/alvaromontoro/full/LqgMpx)
 
 
 ---
