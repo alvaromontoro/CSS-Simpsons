@@ -17,7 +17,7 @@ html {
 .character::after {
   opacity: 0;
   /* this value changes from character to character */ 
-  background-image: url(https://upload.wikimedia.org/wikipedia/en/c/c8/C-bob.png); */
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/c/c8/C-bob.png); 
 }
 
 .character::before {
