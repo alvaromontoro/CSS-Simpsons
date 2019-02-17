@@ -540,7 +540,6 @@ html {
   border-radius: 100%;
   border: 3px solid transparent;
   box-shadow: inset -4px 0 0 -1px #000;
-  aborder-right: 3px solid #000;
   transform: rotate(-2deg)
 }
 #leg-1::after {
@@ -549,8 +548,6 @@ html {
   height:  100px;
   width: 15px;
   border-radius: 100%;
-  aborder: 3px solid transparent;
-  aborder-left: 3px solid #000;
   transform: rotate(-17deg);
   box-shadow: inset 4px 4px 0 -1px #000;
 }
@@ -804,8 +801,6 @@ html {
   width: 145px;
   height: 50px;
   border-radius: 100%;
-  aborder: 3px solid transparent;
-  aborder-bottom: 3px solid #000;
   box-shadow: inset 0 -4px 0 -1px #000, inset 0 0px 0 100px var(--pink), -15px -32px 0 15px var(--pink), -18px -40px 0 12px var(--pink), -18px -90px 0 7px var(--pink);
   transform:rotate(4deg);
 }
