@@ -15,7 +15,7 @@ See them online on CodePen (in alphabetical order):
 
 ---
 
-All the previous characters are drawn in color and full body, here are some other CSS Simpsons drawings:
+Here are some other CSS Simpsons drawings:
 
 - [Homer Simpson drawn in CSS using only circles](https://codepen.io/alvaromontoro/full/BMdzxV) (mouse over to see all the circles)
 
