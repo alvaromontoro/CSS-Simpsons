@@ -1,0 +1,500 @@
+@keyframes pop {
+  0% { opacity: 0; background: rgba(255,0,0,0.2); overflow: visible; }
+  25%, 50% { opacity: 1; background: rgba(255,0,0,0.2); overflow: visible; }
+  75% { opacity: 1; background: rgba(255,0,0,0.2); overflow: hidden; }
+  100% { opacity: 1; background: rgba(0,0,0,0); overflow: hidden; }
+}
+@keyframes pop2 {
+  0% { opacity: 0; background: rgba(255,0,0,0.2); overflow: visible; }
+  16%, 33% { opacity: 1; background: rgba(255,0,0,0.2); overflow: visible }
+  83% { opacity: 1; background: rgba(255,0,0,0.2); overflow: hidden; }
+  100% { opacity: 1; background: rgba(0,0,0,0); overflow: hidden; }
+}
+@keyframes show {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+html, body {
+  overflow: hidden;
+  --time: 3s;
+}
+
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 100%;
+  position: absolute;
+  opacity: 0;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.pop {
+  animation-name: pop;
+  animation-duration: 3s;
+}
+
+.pop2 {
+  animation-name: pop2;
+  animation-duration: 4s;
+}
+
+.pop2 > div:not(.eye),
+.pop > div:not(.eye),
+.show {
+  animation-name: show;
+  animation-duration: 1s;
+  animation-delay: 1s;
+}
+
+/* no = no overflow */
+.no {
+  overflow: hidden;
+}
+
+#frame {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  border: 3px solid #000;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: visible;
+}
+
+#top {
+  width: 130px;
+  height: 130px;
+  top: -20px;
+  left: 100px;
+  animation-delay: 2s;
+}
+
+#top > div {
+  border: 3px solid #000;
+  width: 121px;
+  height: 121px;
+  top: 44px;
+  left: -7px;
+  animation-delay: 3s;
+}
+
+.top-hair {
+  width: 60px;
+  height: 60px;
+  left: 137px;
+  top: -6px;
+}
+.top-hair > div {
+  width: 55px;
+  height: 55px;
+  border: 3px solid #000;
+  left: -4px;
+  top: 18px;
+}
+.top-hair-1 {
+  animation-delay: 4s;
+}
+.top-hair-1 > div {
+  animation-delay: 5s !important;
+}
+.top-hair-2 {
+  left: 160px;
+  top: -2px;
+  animation-delay: 6s;
+}
+.top-hair-2 > div {
+  left: -10px;
+  top: 19px;
+  animation-delay: 7s !important;
+}
+
+#forehead {
+  width: 33px;
+  height: 33px;
+  top: 53px;
+  left: 78px;
+  animation-delay: 8s;
+}
+#forehead > div {
+  width: 1000px;
+  height: 1000px;
+  border: 3px solid #000;
+  left: -18px;
+  top: -301px;
+  animation-delay: 9s;
+}
+
+#back-2 {
+  width: 35px;
+  height: 35px;
+  top: 85px;
+  left: 185px;
+  animation-delay: 10s;
+}
+#back-2 div {
+  width: 600px;
+  height: 600px;
+  border: 3px solid #000;
+  top: -356px;
+  left: -565px;
+  animation-delay: 11s;
+}
+
+#back {
+  width: 300px;
+  height: 300px;
+  left: -90px;
+  top: 5px;
+  animation-delay: 12s;
+}
+#back div {
+  width: 500px;
+  height: 500px;
+  border: 3px solid #000;
+  top: -40px;
+  left: 274px;
+  animation-delay: 13s;
+}
+
+#ear {
+  width: 80px;
+  height: 80px;
+  top: 133px;
+  left: 175px;
+  animation-delay: 14s;
+}
+#ear > div {
+  width: 32px;
+  height: 32px;
+  top: 23px;
+  left: -4px;
+  border: 3px solid #000;
+  background: #fff;
+  animation-delay: 15s;
+}
+
+#ear-line-1 {
+  width: 25px;
+  height: 25px;
+  top: 150px;
+  left: 170px;
+  animation-delay: 16s;
+}
+#ear-line-1 > div {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000;
+  top: 15px;
+  left: 9px;
+  animation-delay: 17s;
+}
+#ear-line-2 {
+  width: 25px;
+  height: 25px;
+  top: 155px;
+  left: 183px;
+  animation-delay: 18s;
+}
+#ear-line-2 > div {
+  width: 15px;
+  height: 15px;
+  border: 3px solid #000;
+  top: 12px;
+  left: -8px;
+  animation-delay: 19s;
+}
+
+#hair-1 {
+  width: 43px;
+  height: 43px;
+  top: 120px;
+  left: 171px;
+  animation-delay: 20s;
+}
+#hair-1 .hair {
+  width: 2500px;
+  height: 2500px;
+  border: 3px solid #000;
+}
+#hair-2 {
+  top: -5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+  animation-delay: 22s;
+}
+.hair-1 {
+  top: -700px;
+  left: -112px;
+  animation-delay: 21s !important;
+}
+.hair-2 {
+  top: -1080px;
+  left: 25px;
+  animation-delay: 21s !important;
+}
+.hair-3 {
+  top: -1200px;
+  left: -2485px;
+    animation-delay: 22s !important;
+}
+.hair-4 {
+  top: -520px;
+  left: -197px;
+  animation-delay: 22s !important;
+}
+
+#neck {
+  width: 40px;
+  height: 40px;
+  top: 225px;
+  left: 72px;
+  animation-delay: 24s;
+}
+#neck > div {
+  width: 500px;
+  height: 500px;
+  border: 3px solid #000;
+  left: -450px;
+  top: -320px;
+  animation-delay: 25s;
+}
+
+#mouth {
+  width: 330px;
+  height: 330px;
+  top: 90px;
+  left: 97px;
+  animation-delay: 26s;
+}
+#mouth > div {
+  width: 81px;
+  height: 81px;
+  border: 3px solid #000;
+  top: 70px;
+  left: -9px;
+  animation-delay: 27s;
+}
+#lip {
+  width: 20px;
+  height: 20px;
+  top: 212px;
+  left: 82px;
+  animation-delay: 28s;
+}
+#lip > div {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  left: 8px;
+  top: -6px;
+  animation-delay: 29s;
+}
+#smile{
+  top: 185px;
+  left: 60px;
+  width:100px;
+  height:100px;
+  animation-delay: 30s;
+}
+#smile > div {
+  width: 270px;
+  height: 270px;
+  border: 3px solid #000;
+  top: -240px;
+  left: -87px;
+  animation-delay: 31s;
+}
+
+#lip-mouth {
+  width: 20px;
+  height: 20px;
+  top: 193px;
+  left: 142px;
+  animation-delay: 32s;
+}
+#lip-mouth > div {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  left: -9px;
+  top: 7px;
+  animation-delay: 33s;
+}
+
+#lip-top {
+  width: 30px;
+  height: 30px;
+  top: 185px;
+  left: 42px;
+  animation-delay: 34s;
+}
+#lip-top > div {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  left: 17px;
+  top: 2px;
+  animation-delay: 35s;
+}
+
+#upperlip {
+  width: 48px;
+  height: 48px;
+  top: 143px;
+  left: 38px;
+  animation-delay: 36s;
+}
+#upperlip > div {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #000;
+  left: 26px;
+  top: 4px;
+  animation-delay: 37s;
+}
+
+#nose {
+  width: 35px;
+  height: 35px;
+  top: 127px;
+  left: 62px;
+  animation-delay: 38s;
+}
+#nose > div {
+  width: 29px;
+  height: 29px;
+  border: 3px solid #000;
+  left: 14px;
+  top: 4px;
+  animation-delay: 39s;
+}
+
+#nose-bottom {
+  width: 45px;
+  height: 45px;
+  top: 140px;
+  left: 85px;
+  animation-delay: 40s;
+}
+#nose-bottom > div {
+  width: 600px;
+  height: 600px;
+  border: 3px solid #000;
+  left: -253px;
+  top: -577px;
+  animation-delay: 41s;
+}
+#nose-top {
+  width: 45px;
+  height: 45px;
+  top: 115px;
+  left: 90px;
+  animation-delay: 42s;
+}
+#nose-top > div {
+  width: 600px;
+  height: 600px;
+  border: 3px solid #000;
+  left: -253px;
+  top: -577px;
+  animation-delay: 43s;
+}
+
+#eyebrow {
+  width: 25px;
+  height: 25px;
+  top: 76px;
+  left: 67px;
+  animation-delay: 44s;
+}
+#eyebrow > div {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  left: 15px;
+  top: 6px;
+  animation-delay: 45s;
+}
+
+
+
+.eye-container {
+  width: 100px;
+  height: 100px;
+  top: 97px;
+  left: 90px;
+}
+.eye {
+  top: -3px;
+  left: 25px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #000;
+  background: #fff !important;
+}
+.eye-lid {
+  top: 17px;
+  left: -90px;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #000;
+}
+.pupil {
+  width: 8px;
+  height: 8px;
+  background: black;
+  top: 25px;
+  left: 25px;
+}
+.eye-1 {
+  width:200px;
+  height: 200px;
+  top: 96px;
+  left: -11px;
+  animation-delay: 49s !important;
+}
+.eye-1 .eye {
+  left: 36px;
+  top: 52px;
+  animation-delay: 50s !important;
+}
+.eye-1 .eye div {
+  animation-delay: 51s !important;
+}
+.eye-1 .eye-lid {
+  left: -80px;
+  top:15px;
+}
+.eye-1 .pupil {
+  top: 22px;
+  left: 18px;
+}
+.eye-2 {
+  animation-delay: 46s;
+}
+.eye-2 .eye {
+  box-shadow: inset 0 0 0 30px #fff;
+  animation-delay: 47s !important;
+}
+.eye-2 .eye div {
+  animation-delay: 48s !important;
+}
+.behind-nose {
+  width: 100px;
+  height: 100px;
+  left: 45px;
+  top: -55px;
+}
+
+
+
+
+
+
+
