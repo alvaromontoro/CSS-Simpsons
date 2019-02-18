@@ -1,0 +1,385 @@
+html, body {
+  overflow: hidden;
+}
+
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 100%;
+  position: absolute;
+}
+
+/* no = no overflow */
+.no {
+  overflow: hidden;
+}
+
+#frame {
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  border: 3px solid #000;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  overflow: visible;
+}
+
+
+#frame:hover .no {
+  overflow: visible;
+}
+
+#frame:hover div:not(.pupil) {
+  background: none !important;
+}
+
+#top {
+  width: 130px;
+  height: 130px;
+  top: -20px;
+  left: 100px;
+}
+
+#top > div {
+  border: 3px solid #000;
+  width: 121px;
+  height: 121px;
+  top: 44px;
+  left: -7px;
+}
+.eye-container {
+  width: 100px;
+  height: 100px;
+  top: 97px;
+  left: 90px;
+}
+.eye {
+  top: -3px;
+  left: 25px;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #000;
+}
+.eye-lid {
+  top: 17px;
+  left: -90px;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #000;
+}
+.pupil {
+  width: 8px;
+  height: 8px;
+  background: black;
+  top: 25px;
+  left: 25px;
+}
+.eye-1 {
+  width:200px;
+  height: 200px;
+  top: 96px;
+  left: -11px;
+}
+.eye-1 .eye {
+  left: 36px;
+  top: 52px;
+}
+.eye-1 .eye-lid {
+  left: -80px;
+  top:15px;
+}
+.eye-1 .pupil {
+  top: 22px;
+  left: 18px;
+}
+.eye-2 .eye {
+  background: #fff;
+}
+.behind-nose {
+  width: 100px;
+  height: 100px;
+  left: 45px;
+  top: -55px;
+}
+#hair-1 {
+  width: 43px;
+  height: 43px;
+  top: 120px;
+  left: 171px;
+}
+#hair-1 .hair {
+  width: 2500px;
+  height: 2500px;
+  border: 3px solid #000;
+}
+#hair-2 {
+  top: -5px;
+  left: 5px;
+  width: 40px;
+  height: 40px;
+}
+.hair-1 {
+  top: -700px;
+  left: -112px;
+}
+.hair-2 {
+  top: -1080px;
+  left: 25px;
+}
+.hair-3 {
+  top: -1200px;
+  left: -2485px;
+}
+.hair-4 {
+  top: -520px;
+  left: -197px;
+}
+#back {
+  width: 300px;
+  height: 300px;
+  left: -90px;
+  top: 5px;
+}
+#back div {
+  width: 500px;
+  height: 500px;
+  border: 3px solid #000;
+  top: -40px;
+  left: 274px;
+}
+#back-2 {
+  width: 35px;
+  height: 35px;
+  top: 85px;
+  left: 185px;
+}
+#back-2 div {
+  width: 600px;
+  height: 600px;
+  border: 3px solid #000;
+  top: -356px;
+  left: -565px;
+}
+#ear {
+  width: 80px;
+  height: 80px;
+  top: 133px;
+  left: 175px;
+}
+#ear > div {
+  width: 32px;
+  height: 32px;
+  top: 23px;
+  left: -4px;
+  border: 3px solid #000;
+  background: #fff;
+}
+#ear-line-1 {
+  width: 25px;
+  height: 25px;
+  top: 150px;
+  left: 170px;
+}
+#ear-line-1 > div {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #000;
+  top: 15px;
+  left: 9px;
+}
+#ear-line-2 {
+  width: 25px;
+  height: 25px;
+  top: 155px;
+  left: 183px;
+}
+#ear-line-2 > div {
+  width: 15px;
+  height: 15px;
+  border: 3px solid #000;
+  top: 12px;
+  left: -8px;
+}
+
+#mouth {
+  width: 330px;
+  height: 330px;
+  top: 90px;
+  left: 97px;
+}
+#mouth > div {
+  width: 81px;
+  height: 81px;
+  border: 3px solid #000;
+  top: 70px;
+  left: -9px;
+}
+#lip {
+  width: 20px;
+  height: 20px;
+  top: 212px;
+  left: 82px;
+}
+#lip > div {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  left: 8px;
+  top: -6px;
+}
+#smile{
+  top: 185px;
+  left: 60px;
+  width:100px;
+  height:100px;
+}
+#smile > div {
+  width: 270px;
+  height: 270px;
+  border: 3px solid #000;
+  top: -240px;
+  left: -87px;
+}
+
+#lip-mouth {
+  width: 20px;
+  height: 20px;
+  top: 193px;
+  left: 142px;
+}
+#lip-mouth > div {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  left: -9px;
+  top: 7px;
+}
+#lip-top {
+  width: 30px;
+  height: 30px;
+  top: 185px;
+  left: 42px;
+}
+#lip-top > div {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  left: 17px;
+  top: 2px;
+}
+#neck {
+  width: 40px;
+  height: 40px;
+  top: 225px;
+  left: 72px;
+}
+#neck > div {
+  width: 500px;
+  height: 500px;
+  border: 3px solid #000;
+  left: -450px;
+  top: -320px;
+}
+#eyebrow {
+  width: 25px;
+  height: 25px;
+  top: 76px;
+  left: 67px;
+}
+#eyebrow > div {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #000;
+  left: 15px;
+  top: 6px;
+}
+#forehead {
+  width: 33px;
+  height: 33px;
+  top: 53px;
+  left: 78px;
+}
+#forehead > div {
+  width: 1000px;
+  height: 1000px;
+  border: 3px solid #000;
+  left: -18px;
+  top: -301px;
+}
+#upperlip {
+  width: 48px;
+  height: 48px;
+  top: 143px;
+  left: 38px;
+}
+#upperlip > div {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #000;
+  left: 26px;
+  top: 4px;
+}
+#nose {
+  width: 35px;
+  height: 35px;
+  top: 127px;
+  left: 62px;
+}
+#nose > div {
+  width: 29px;
+  height: 29px;
+  border: 3px solid #000;
+  left: 14px;
+  top: 4px;
+}
+#nose-bottom {
+  width: 45px;
+  height: 45px;
+  top: 140px;
+  left: 85px;
+}
+#nose-bottom > div {
+  width: 600px;
+  height: 600px;
+  border: 3px solid #000;
+  left: -253px;
+  top: -577px;
+}
+#nose-top {
+  width: 45px;
+  height: 45px;
+  top: 115px;
+  left: 90px;
+}
+#nose-top > div {
+  width: 600px;
+  height: 600px;
+  border: 3px solid #000;
+  left: -253px;
+  top: -577px;
+}
+.top-hair {
+  width: 60px;
+  height: 60px;
+  left: 137px;
+  top: -6px;
+}
+.top-hair > div {
+  width: 55px;
+  height: 55px;
+  border: 3px solid #000;
+  left: -4px;
+  top: 18px;
+}
+.top-hair-2 {
+  left: 160px;
+  top: -2px;
+}
+
+.top-hair-2 > div {
+  left: -10px;
+  top: 19px;
+}
