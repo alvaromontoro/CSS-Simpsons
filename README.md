@@ -18,6 +18,8 @@ See them online on CodePen (in alphabetical order):
 Here are some other CSS Simpsons drawings:
 
 - [Homer Simpson drawn in CSS using only circles](https://codepen.io/alvaromontoro/full/BMdzxV) (mouse over to see all the circles)
+- [Homer Simpson drawn in CSS using only circles](https://codepen.io/alvaromontoro/full/JxMPqa) (animated)
+
 
 
 ---
